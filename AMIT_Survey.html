@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <meta charset="UTF-8"> 
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>
+        AMIT_Survey
+    </title>
+
+    <style>
+
+        body{
+            background-color: rgba(169, 167, 173, 0.82);
+        }
+
+        .container_master{
+            background-color: rgba(169, 167, 173, 0.82);
+            width: 50%;
+            min-width: 400px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: aliceblue;
+        
+
+        }
+        .container{
+            background-color: rgb(6, 6, 76);
+            min-width: 400px;
+            max-width: 800px;
+            margin-top: 20px;
+            text-align: left;
+            padding: 20px;
+          
+
+        }
+        hr{
+            border: rgb(212, 199, 208) 1px solid;
+            height: 2px;
+            color: rgb(212, 199, 208) ;
+            background-color: rgb(212, 199, 208);
+        }
+        .input_handle{
+            border-radius: 5px;
+            width: 97%;
+            height: 20px;
+            
+        }
+        .Select_handle
+        {
+            border-radius: 5px;
+            width: 98%;
+            height: 25px;
+        }
+        textarea{
+            border-radius: 5px;
+            width: 97%;
+            
+        
+        }
+        button{
+            border-radius: 5px;
+            width: 98%;
+            height: 30px;
+            color: aliceblue;
+            background-color: rgb(27, 31, 139);
+        }
+        .label_handel{
+            display: block;
+            
+            padding-top: 10px ;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container_master">
+        <header>
+        <h1>AMIT Survey Form</h1>
+        <p><i>Thank you for your taking the time to help us improve the <br> paltform</i></p>
+    </header>
+    <hr>
+  <div class="container">  
+    <main>
+    <form action="https://amit-learning.com/" method="post">
+        <label for="Enter_Name" class="label_handel">Name</label> <br>
+        <input type="text" name="Name" id="Enter_Name" placeholder="Enter Your name" required class="input_handle"><br>
+        <label for="Enter_Email" class="label_handel">Email</label> <br>
+        <input type="email" name="Email" id="Enter_Email" placeholder="Enter Your Email" required class="input_handle" ><br>
+        <label for="Enter_Age" class="label_handel">Age(Option)</label> <br>
+        <input type="text" name="Age" id="Enter_Age" placeholder="Enter Your Age" class="input_handle"><br>
+
+        <label for="select_currentRole" class="label_handel">Which option best describes your current role?</label><br>
+        <select id="select_currentRole" name="currentRole" aria-placeholder="select current role"  class="Select_handle">
+
+            <option value="Select Current Role">Select Current Role</option>
+            <option value="Select Current Role">1st role</option>
+        </select><br>
+        
+        <p>Whoud you recommded free codecamp to a friend?</p>
+        <input type="radio" name="radio" id="definitely" checked>
+        <label for="definitely">definitely</label><br>
+        <input type="radio" name="radio" id="Maybe">
+        <label for="Maybe">Maybe</label><br>
+        <input type="radio" name="radio" id="Not_Sure">
+        <label for="Not_Sure">Not Sure</label><br>
+
+        <label for="option_freecamp" class="label_handel">What is your favorite feature of freeCodeCamp</label><br>
+        <select id="option_freecamp" name="option_freecamp" aria-placeholder="Select an option" class="Select_handle">
+
+            <option value="Select Current Role">Select an option</option>
+            <option value="Select Current Role">2nd option</option>
+        </select><br>
+    <p>What would you like to see improved? ( check all that aply )</p>
+
+    <input type="checkbox" id="front_end" name="front_end" value="front_end">
+    <label for="front_end"> Front_end projects</label><br>
+    <input type="checkbox" id="Back_end" name="Back_end" value="Back_end">
+    <label for="Back_end"> Back_end projects</label><br>
+    <input type="checkbox" id="Data_Visualization" name="Data_Visualization" value="Data_Visualization">
+    <label for="Data_Visualization">Data Visualization</label><br>
+    <input type="checkbox" id="Challenges" name="Challenges" value="Challenges">
+    <label for="Challenges"> Challenges</label><br>
+    <input type="checkbox" id="Open_source" name="Open_source" value="Open_source">
+    <label for="Open_source"> Open Source Community</label><br>
+    <input type="checkbox" id="Videos" name="Videos" value="Videos">
+    <label for="Videos"> Videos</label><br>
+    <input type="checkbox" id="Wikki" name="Wikki" value="Wikki">
+    <label for="Wikki"> Wikki</label><br>
+    <input type="checkbox" id="Forum" name="Forum" value="Forum">
+    <label for="Forum"> Forum</label><br>
+
+    <p>any comments or suggestions</p>
+    <textarea name="textarea_comments" id="textarea_comments" rows="3" cols="30"> enter your comments here ...</textarea><br>
+
+    <button type="submit" >Submit</button>
+
+    </form>
+
+    </main>
+</div>
+</div>  
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
